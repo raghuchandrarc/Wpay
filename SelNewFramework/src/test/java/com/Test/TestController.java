@@ -53,23 +53,28 @@ public class TestController extends Resources {
 	public void initBrowser() throws IOException {
 		Initialize();
 
-		DesiredCapabilities returnCapabilities = DesiredCapabilities.internetExplorer();
+		/*DesiredCapabilities returnCapabilities = DesiredCapabilities.internetExplorer();
 		returnCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 		returnCapabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
 		String ieDriver = System.getProperty("user.dir") + "\\BrowserDrivers\\IEDriverServer32.exe";
 		System.setProperty("webdriver.ie.driver", ieDriver);
-		dr = new InternetExplorerDriver(returnCapabilities);
-		/*ChromeOptions o = new ChromeOptions();
+		dr = new InternetExplorerDriver(returnCapabilities);*/
+		ChromeOptions o = new ChromeOptions();
 		o.addArguments("disable-extensions");
 		o.addArguments("--start-maximized");
 		
-		String ieDriver = System.getProperty("user.dir") + "\\BrowserDrivers\\chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", ieDriver);*/
-			//dr = new ChromeDriver(o);
+	String chDriver = System.getProperty("user.dir") + "\\BrowserDrivers\\chromedriver72.exe";
+		System.setProperty("webdriver.chrome.driver", chDriver);
+		dr = new ChromeDriver(o);
+		
+		/*String frDriver = System.getProperty("user.dir") + "\\BrowserDrivers\\geckodriver.exe";
+		System.setProperty("webdriver.gecko.driver", frDriver);
+		dr = new FirefoxDriver();*/
+			
 		driver = new EventFiringWebDriver(dr);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
 
 	}

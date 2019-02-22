@@ -140,6 +140,7 @@ public class Keywords extends Resources {
 			Log4j.info("Enter text into ... " + webElement);
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.visibilityOf(getWebElement(webElement)));
+			highLightElement(driver, getWebElement(webElement));
 			getWebElement(webElement).sendKeys(TestData);
 		} catch (Throwable t) {
 			Log4j.error("Not able to InputText--- " + t.getMessage());
