@@ -256,7 +256,7 @@ public class TestController extends Resources {
 	public void quitBrowser() {
 		System.out.println("In quitBrowser---------------------------");
 
-		//driver.quit();
+		driver.quit();
 	}
 
 }

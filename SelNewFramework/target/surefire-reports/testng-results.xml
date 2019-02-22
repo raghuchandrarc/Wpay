@@ -2,20 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-02-22T07:34:58Z" name="Command line suite" finished-at="2019-02-22T07:36:10Z" duration-ms="72200">
+  <suite started-at="2019-02-22T08:52:29Z" name="Command line suite" finished-at="2019-02-22T08:53:36Z" duration-ms="67273">
     <groups>
     </groups>
-    <test started-at="2019-02-22T07:34:58Z" name="Command line test" finished-at="2019-02-22T07:36:10Z" duration-ms="72200">
+    <test started-at="2019-02-22T08:52:29Z" name="Command line test" finished-at="2019-02-22T08:53:36Z" duration-ms="67273">
       <class name="com.Test.TestController">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:com.Test.TestController@62ef27a8]" started-at="2019-02-22T13:04:58Z" name="initBrowser" finished-at="2019-02-22T13:05:06Z" duration-ms="8653" status="PASS">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:com.Test.TestController@62ef27a8]" started-at="2019-02-22T14:22:29Z" name="initBrowser" finished-at="2019-02-22T14:22:35Z" duration-ms="5914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method signature="TestCaseController()[pri:0, instance:com.Test.TestController@62ef27a8]" started-at="2019-02-22T13:05:06Z" name="TestCaseController" finished-at="2019-02-22T13:06:10Z" duration-ms="63531" status="PASS">
+        <test-method signature="TestCaseController()[pri:0, instance:com.Test.TestController@62ef27a8]" started-at="2019-02-22T14:22:35Z" name="TestCaseController" finished-at="2019-02-22T14:23:33Z" duration-ms="58595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCaseController -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.Test.TestController@62ef27a8]" started-at="2019-02-22T13:06:10Z" name="quitBrowser" finished-at="2019-02-22T13:06:10Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.Test.TestController@62ef27a8]" started-at="2019-02-22T14:23:33Z" name="quitBrowser" finished-at="2019-02-22T14:23:36Z" duration-ms="2764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
